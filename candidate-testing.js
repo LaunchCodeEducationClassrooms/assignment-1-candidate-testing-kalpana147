@@ -38,7 +38,7 @@ function gradeQuiz() {
 
   candidateAnswer [i] = input.question((questionNumber + i) + ") "+ questions[i]+"\nYour answer: ");
   console.log("Correct Answer: "+ correctAnswers[i]+ "\n")
-if(candidateAnswer[i].toLowerCase()===correctAnswers[i].toLowerCase()){
+ if(candidateAnswer[i].toLowerCase()===correctAnswers[i].toLowerCase()){
 correctAnswer +=1;
 }
 }
