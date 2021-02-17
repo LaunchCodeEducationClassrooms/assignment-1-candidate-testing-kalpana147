@@ -6,12 +6,12 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName;
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question=0;
+let question="'Who was the first American woman in space?'"
 let correctAnswer= 0;
 let candidateAnswer= [];
 let candidateAnswers;
 let result;
-let grade;
+
 let questionNumber=1;
 let questions =['Who was the first American woman in space?','True or false: 5000 meters = 5 kilometers.',
   ' (5 + 3)/2 * 10 = ?', 
@@ -45,7 +45,7 @@ correctAnswer +=1;
 
 
 function gradeQuiz() {
-  
+  let grade;
   grade= correctAnswer/questions.length*100;
   if(grade>=80){result="PASSED";
   }else{
