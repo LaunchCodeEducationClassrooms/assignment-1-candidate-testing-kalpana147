@@ -1,4 +1,3 @@
-
 const input = require('readline-sync');
 
 // TODO 2: modify your quiz app to ask 5 questions //
@@ -13,11 +12,8 @@ let candidateAnswers="";
 let result;
 
 let questionNumber=1;
-let questions =['Who was the first American woman in space?','True or false: 5000 meters = 5 kilometers.',
-  ' (5 + 3)/2 * 10 = ?', 
-  'Given the array [8, "Orbit", "Trajectory", 45], what entry is at index 2?', 
-  'What is the minimum crew size for the International Space Station (ISS)?']
-let correctAnswers=[ 'Sally Ride','True','40' ,'trajectory', '3']
+let questions =['Who was the first American women in space','True or false: 5000 meters = 5 kilometers.','(5 + 3)/2 * 10 = ?','Given the array [8, "Orbit","Trajectory", 45], what entry is at index 2?','What is the minimum crew size for the International Space Station (ISS)?']
+let correctAnswers=[ 'Sally Ride','True','40','trajectory','3']
 
 
 
