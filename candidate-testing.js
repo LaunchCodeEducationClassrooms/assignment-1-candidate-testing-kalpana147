@@ -24,14 +24,7 @@ console.log("Hello "  + candidateName +"!");
 
 
 function askQuestion() {
-for (let i = 0; i < questions.length; i++){
 
-  candidateAnswer [i] = input.question((questionNumber + i) + ") "+ questions[i]+"\nYour answer: ");
-  console.log("Correct Answer: "+ correctAnswers[i]+ "\n")
-if(candidateAnswer[i].toLowerCase()===correctAnswers[i].toLowerCase()){
-correctAnswer +=1;
-}
-}
 }
 
 
@@ -41,6 +34,14 @@ correctAnswer +=1;
 
 
 function gradeQuiz() {
+  for (let i = 0; i < questions.length; i++){
+
+  candidateAnswer [i] = input.question((questionNumber + i) + ") "+ questions[i]+"\nYour answer: ");
+  console.log("Correct Answer: "+ correctAnswers[i]+ "\n")
+if(candidateAnswer[i].toLowerCase()===correctAnswers[i].toLowerCase()){
+correctAnswer +=1;
+}
+}
   let grade;
   grade= correctAnswer/questions.length*100;
   if(grade>=80){result="PASSED";
